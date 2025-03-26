@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.list {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+header {
+  max-width: 800px;
+  width: 100%;
+  padding: 20px 20px 20px 0;
+  margin: auto;
+}
+
+.container {
+  max-width: 1180px;
+  width: 100%;
+  padding: 20px;
+  margin: auto;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 5px;
+  border-top: solid 1px black;
+  position: relative;
+}
+.wrap-content {
+  flex-grow: 1; /* Контент растягивается, чтобы кнопка удаления оставалась справа */
+}
+
+img {
+  max-width: 150px;
+  height: auto;
+  border-radius: 8px;
+}
+.wrap-img {
+  display: flex;
+}
+.wrap-actions {
+  flex-shrink: 0; /* Кнопка удаления не двигается влево */
+}
+.title {
+  font-weight: 600;
+  font-size: 24px;
+  color: #000;
+}
+.text {
+  font-size: 13px;
+  color: #8f95a5;
+  margin-bottom: 20px;
+}
+
+.icon {
+  position: absolute;
+  width: 20px;
+  top: 26px;
+  right: 5px;
+}
+.favorite-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.delete-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.delete-btn:hover {
+  background-color: darkred;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.modal {
+  background: white;
+  padding: 20px;
+  width: 300px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.close-modal {
+   position: absolute;
+  top: 2px;
+  right: 9px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+ 
+}
+
+.modal-title{
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 10px;
+
+}
+.register-btn{
+   background-color: #8a8ade;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.register-btn:hover{
+  background-color: #7373e8;
+}
+.no-scroll {
+  overflow: hidden;
+}
