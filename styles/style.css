@@ -36,6 +36,14 @@ header {
   padding: 20px;
   margin: auto;
 }
+.link-favorite{
+  color: orange;
+  transition: all 0.3s ease;
+ 
+}
+.link-favorite:focus,.link-favorite:hover{
+  color: orangered;
+}
 
 .list {
   display: flex;
@@ -46,14 +54,13 @@ header {
 }
 .item {
   display: flex;
-  justify-content: space-between;
   gap: 20px;
   padding: 20px 5px;
   border-top: solid 1px black;
   position: relative;
 }
 .wrap-content {
-  flex-grow: 1; /* Контент растягивается, чтобы кнопка удаления оставалась справа */
+  flex-grow: 1;
 }
 
 img {
@@ -65,7 +72,7 @@ img {
   display: flex;
 }
 .wrap-actions {
-  flex-shrink: 0; /* Кнопка удаления не двигается влево */
+  flex-shrink: 0; 
 }
 .title {
   font-weight: 600;
@@ -90,16 +97,17 @@ img {
 }
 
 .delete-btn {
-  background-color: red;
+  background-color: orange;
   color: white;
   border: none;
   padding: 5px 10px;
   cursor: pointer;
   border-radius: 4px;
+  transition: all 0.3s ease;
 }
 
 .delete-btn:hover {
-  background-color: darkred;
+  background-color: orangered;
 }
 
 .modal-overlay {
@@ -120,7 +128,7 @@ img {
 .modal {
   background: white;
   padding: 20px;
-  width: 300px;
+  width: 400px;
   border-radius: 8px;
   position: relative;
 }
@@ -148,7 +156,7 @@ img {
 
 }
 .register-btn{
-   background-color: #8a8ade;
+   background-color: orange;
   color: white;
   border: none;
   padding: 5px 10px;
@@ -158,7 +166,7 @@ img {
 }
 
 .register-btn:hover{
-  background-color: #7373e8;
+  background-color: orangered;
 }
 .no-scroll {
   overflow: hidden;
