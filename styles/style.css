@@ -36,12 +36,12 @@ header {
   padding: 20px;
   margin: auto;
 }
-.link-favorite{
+.link-favorite {
   color: orange;
   transition: all 0.3s ease;
- 
 }
-.link-favorite:focus,.link-favorite:hover{
+.link-favorite:focus,
+.link-favorite:hover {
   color: orangered;
 }
 
@@ -72,7 +72,7 @@ img {
   display: flex;
 }
 .wrap-actions {
-  flex-shrink: 0; 
+  flex-shrink: 0;
 }
 .title {
   font-weight: 600;
@@ -139,24 +139,22 @@ img {
 }
 
 .close-modal {
-   position: absolute;
+  position: absolute;
   top: 2px;
   right: 9px;
   font-size: 24px;
   background: none;
   border: none;
   cursor: pointer;
- 
 }
 
-.modal-title{
+.modal-title {
   font-size: 16px;
   color: #000;
   margin-bottom: 10px;
-
 }
-.register-btn{
-   background-color: orange;
+.register-btn {
+  background-color: orange;
   color: white;
   border: none;
   padding: 5px 10px;
@@ -165,9 +163,99 @@ img {
   transition: all 0.3s ease;
 }
 
-.register-btn:hover{
+.register-btn:hover {
   background-color: orangered;
 }
 .no-scroll {
   overflow: hidden;
+}
+
+.slider-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+   max-width: 800px;
+  margin: auto;
+}
+.info{
+  
+}
+.slider-title {
+  font-weight: 600px;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+.slider-text {
+  font-size: 16px;
+  color: #8f95a5;
+
+}
+
+.frame {
+  width: 500px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.cards {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.card {
+  min-width: 500px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+.rounds {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.rounds button {
+  width: 15px;
+  height: 15px;
+  background-color: #ecf0f1;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.rounds .acent {
+  background-color: #e67e22;
+}
+
+.triggers {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.triggers button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.triggers button:hover {
+  font-size: 28px;
 }
